@@ -12,3 +12,14 @@ main{max-width:820px;margin:auto;padding:14px 14px calc(30px + env(safe-area-ins
 @media(min-width:680px){.grid{grid-template-columns:repeat(4,1fr)}}
 
 .wordline{display:flex;align-items:baseline;gap:5px;flex-wrap:wrap}.accent{font-size:10px;font-weight:800;color:#475467;background:#f2f4f7;border-radius:7px;padding:2px 5px}.playrow{display:grid;grid-template-columns:1fr;gap:7px;margin-top:10px}.playrow .play{margin-top:0}.wordplay{background:#eef2ff;color:#4338ca}
+
+/* 示例单词中的目标音标对应字母：加粗 + 下划线 + 淡色底纹 */
+.word .soundmark{
+  font-weight:800;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+  background: rgba(255, 220, 90, .35);
+  border-radius: .25em;
+  padding: 0 .04em;
+}
