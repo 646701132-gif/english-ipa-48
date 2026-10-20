@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="48音标">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icon.svg">
+<link rel="stylesheet" href="./style.css">
+<title>英语48音标真人点读卡</title>
+</head>
+<body>
+<header>
+  <div>
+    <h1>英语48音标真人点读卡</h1>
+    <div class="sub">GitHub Pages · PWA · 可下载音频后离线使用</div>
+  </div>
+  <div class="toolbar">
+    <button class="tab active" data-filter="全部">全部48</button>
+    <button class="tab" data-filter="元音">元音20</button>
+    <button class="tab" data-filter="辅音">辅音28</button>
+  </div>
+  <div class="offline-panel">
+    <button id="downloadOffline" class="download">⬇ 下载离线音频</button>
+    <div id="offlineStatus">首次联网下载一次，之后飞行模式也能播放。</div>
+    <div class="bar"><span id="barFill"></span></div>
+  </div>
+</header>
+
+<main>
+  <div class="tipbox">
+    <b>苹果手机：</b>用 Safari 打开 GitHub Pages 地址 → 先点“下载离线音频” → 等到 48/48 → 分享 → “添加到主屏幕”。之后断网也可以用。
+  </div>
+  <div id="grid" class="grid"></div>
+</main>
+
+<audio id="player" preload="none" playsinline></audio>
+<script src="./app.js"></script>
+</body>
+</html>

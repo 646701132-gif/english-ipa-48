@@ -1,0 +1,5 @@
+Required files missing: []
+Manifest name: 英语48音标真人点读卡
+Audio URLs found: 48
+Range support in sw.js: True
+Audio cache version: True
