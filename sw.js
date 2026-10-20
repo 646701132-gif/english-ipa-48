@@ -1,6 +1,6 @@
 
-const SHELL = 'ipa48-shell-v2';
-const AUDIO = 'ipa48-audio-v2';
+const SHELL = 'ipa48-shell-v3';
+const AUDIO = 'ipa48-audio-v3';
 const SHELL_FILES = [
   './',
   './index.html',
@@ -78,7 +78,7 @@ self.addEventListener('fetch', event => {
   const request = event.request;
   const url = request.url;
 
-  if (url.includes('raw.githubusercontent.com/resetsix/english-ipa/main/public/audio/')) {
+  if (url.includes('raw.githubusercontent.com/resetsix/english-ipa/main/public/audio/') || url.includes('upload.wikimedia.org/wikipedia/commons/transcoded/')) {
     event.respondWith((async () => {
       const cache = await caches.open(AUDIO);
 

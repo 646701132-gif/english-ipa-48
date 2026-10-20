@@ -1,0 +1,16 @@
+V3 AUDIT REPORT
+================
+Cards: 48
+Unique IPA: 48
+Phoneme audio mappings: 48
+Example word audio mappings: 48
+
+Accent summary:
+- UK: 45
+- US: 3
+
+Special notes:
+- /tr dr ts dz/: domestic 48-symbol teaching treats these as combinations.
+- /ʊə/: traditional teaching symbol; modern British English may merge it with /ɔː/ in some words.
+- Chinese mnemonics are approximate cues only.
+- UK/US labels are displayed on every example word card.
